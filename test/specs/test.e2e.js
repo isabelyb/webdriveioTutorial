@@ -1,6 +1,6 @@
-const { expect } = require('@wdio/globals')
-const LoginPage = require('../pageobjects/login.page')
-const SecurePage = require('../pageobjects/secure.page')
+import { expect } from '@wdio/globals'
+import LoginPage from '../pageobjects/login.page.js'
+import SecurePage from '../pageobjects/secure.page.js'
 
 describe('My Login application', () => {
     it('should login with valid credentials', async () => {
